@@ -40,7 +40,7 @@ export async function getStaticPaths() {
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
-  };
+  }
 }
 
 export async function getStaticProps(context) {
@@ -67,9 +67,9 @@ export async function getStaticProps(context) {
         address: selectedMeetup.data.address,
         image: selectedMeetup.data.image,
         description: selectedMeetup.data.description,
-      },
-    },
-  };
+      }
+    }
+  }
 }
 
 export default MeetupDetails;

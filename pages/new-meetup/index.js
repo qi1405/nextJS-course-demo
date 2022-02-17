@@ -34,7 +34,7 @@ function NewMeetupPage() {
       </Head>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </Fragment>
-  );
+  )
 }
 
 export default NewMeetupPage;
